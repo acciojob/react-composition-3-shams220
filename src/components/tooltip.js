@@ -17,19 +17,18 @@ const Tooltip = (props) => {
     <div>
       <div className='visible'
       style={{
-        borderBottom:"5px",
-        borderColor:"grey",
-        display:"flex",
-        flexDirection:"column",
-        // justifyContent:"center",
-        // justifyContent:"flex-end",
-        alignItems:"center"
+      
         }}>
-            {fvisible && props.prop.first}
-        <h1 onMouseEnter={isVisible} onMouseLeave={hide}>Hover over me</h1>
-     {svisible && props.prop.second}
+            {fvisible && <div style={{backgroundColor:"red",color:"white"}}>
+                {props.prop[0]}</div>}
+       <div style={{backgroundColor:"white",height:"3rem"}}>
+         <h1 onMouseEnter={isVisible} onMouseLeave={hide}>Hover over me</h1>
+       </div>
+     {svisible && <div style={{backgroundColor:"red",color:"white"}}>
+                {props.prop[1]}</div>}
+<div style={{backgroundColor:"white",height:"3rem"}} >
       <h3 onMouseEnter={secVisble} onMouseLeave={hide}>Hover over me to see another tooltip</h3>
-       
+    </div>       
       </div>
      
     </div>
