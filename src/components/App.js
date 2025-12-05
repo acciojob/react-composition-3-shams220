@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <Tooltip prop = {[first,second]} />
+        <Tooltip first = "This is a Tooltip" second = "This is another Tooltip"/>
     </div>
   )
 }

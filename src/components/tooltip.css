@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+.master{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.first{
+      width: 11rem;
+    border-radius: 10px;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 9;
+       top: 18rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    left: 40rem;
+}
+.second{
+ border-radius: 7px;
+    text-align: center;
+    height: 4rem;
+    width: 9rem;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 26rem;
+    left: 41rem;
+}
+.h1{
+    border-bottom: dotted;
+    border-color: #dcd8d8;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    width: 16rem;
+}
+.h3{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: dotted;
+    border-bottom: dotted;
+    border-color: #dcd8d8;
+}
