@@ -11,10 +11,7 @@ const Tooltip = ({ text, children }) => {
       onMouseLeave={() => setVisible(false)}
     >
       {children}
-
-      <span className={`tooltiptext ${visible ? "show" : ""}`}>
-        {text}
-      </span>
+      {visible && <div className="tooltiptext">{text}</div>}
     </div>
   );
 };
