@@ -4,12 +4,17 @@ import './../styles/App.css';
 import Tooltip from "./tooltip";
 const App = () => {
 
-  var first = "This is a Tooltip"
-  var second = "This is another Tooltip"
+  
   return (
     <div>
         {/* Do not remove the main div */}
-        <Tooltip first = "This is a Tooltip" second = "This is another Tooltip"/>
+       <Tooltip text="This is a Tooltip">
+        <h1>Hover over me</h1>
+       </Tooltip>
+       <Tooltip text="This is another Tooltip">
+        <h3>Hover over me to see another tooltip</h3>
+       </Tooltip>
+        
     </div>
   )
 }
