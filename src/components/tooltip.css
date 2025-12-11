@@ -1,17 +1,28 @@
-/* .tooltip {
+.tooltip {
   position: relative;
   display: inline-block;
 }
 
 .tooltiptext {
-  position: absolute;
-  background-color: #333;
+  visibility: hidden;
+  background-color: black;
   color: #fff;
+  text-align: center;
   padding: 6px 10px;
   border-radius: 4px;
+  
+  position: absolute;
   z-index: 10;
-  top: 100%;
+
+  top: 120%;        
   left: 50%;
   transform: translateX(-50%);
-  white-space: nowrap;
-} */
+
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tooltiptext.show {
+  visibility: visible;
+  opacity: 1;
+}
