@@ -5,14 +5,26 @@ const Tooltip = ({ text, children }) => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <div
+  <div>
+      <div
       className="tooltip"
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
     >
-      {children}
-      {visible && <div className="tooltiptext">{text}</div>}
+      {children[0]}
+      {visible && <div className="tooltiptext">{text[0]}</div>}
     </div>
+    <div>
+       <div
+      className="tooltip"
+      onMouseEnter={() => setVisible(true)}
+      onMouseLeave={() => setVisible(false)}
+    >
+      {children[1]}
+      {visible && <div className="tooltiptext">{text[1]}</div>}
+    </div>
+    </div>
+  </div>
   );
 };
 
